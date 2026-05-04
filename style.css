@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Шапка */
+.header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 2rem 0;
+}
+.header .name {
+    font-size: 2.5rem;
+}
+.header .profession {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.header .nav a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.header .nav a:hover {
+    color: #3498db;
+}
+
+/* Секции */
+.section {
+    padding: 4rem 0;
+}
+.section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.section p {
+    text-align: center;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.service-item {
+    flex: 1 1 300px;
+    margin: 1rem;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+.portfolio-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Контакты */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.contact-form input,
+.contact-form textarea {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+.contact-form button {
+    padding: 1rem;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.contact-form button:hover {
+    background: #2980b9;
+}
+
+/* Подвал */
+.footer {
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+}
